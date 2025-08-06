@@ -1,0 +1,11 @@
+C:\Users\Eslam\source\repos\NewProject\NewProject.Domain\bin\Debug\net8.0\NewProject.Domain.deps.json
+C:\Users\Eslam\source\repos\NewProject\NewProject.Domain\bin\Debug\net8.0\NewProject.Domain.dll
+C:\Users\Eslam\source\repos\NewProject\NewProject.Domain\bin\Debug\net8.0\NewProject.Domain.pdb
+C:\Users\Eslam\source\repos\NewProject\NewProject.Domain\obj\Debug\net8.0\NewProject.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Eslam\source\repos\NewProject\NewProject.Domain\obj\Debug\net8.0\NewProject.Domain.AssemblyInfoInputs.cache
+C:\Users\Eslam\source\repos\NewProject\NewProject.Domain\obj\Debug\net8.0\NewProject.Domain.AssemblyInfo.cs
+C:\Users\Eslam\source\repos\NewProject\NewProject.Domain\obj\Debug\net8.0\NewProject.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Eslam\source\repos\NewProject\NewProject.Domain\obj\Debug\net8.0\NewProject.Domain.dll
+C:\Users\Eslam\source\repos\NewProject\NewProject.Domain\obj\Debug\net8.0\refint\NewProject.Domain.dll
+C:\Users\Eslam\source\repos\NewProject\NewProject.Domain\obj\Debug\net8.0\NewProject.Domain.pdb
+C:\Users\Eslam\source\repos\NewProject\NewProject.Domain\obj\Debug\net8.0\ref\NewProject.Domain.dll

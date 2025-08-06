@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Eslam\\source\\repos\\NewProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DF282CDC-F82A-426B-AF17-B07773FCEBEF}|NewProject\\NewProject.Host.csproj|c:\\users\\eslam\\source\\repos\\newproject\\newproject\\controllers\\supportgroupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DF282CDC-F82A-426B-AF17-B07773FCEBEF}|NewProject\\NewProject.Host.csproj|solutionrelative:newproject\\controllers\\supportgroupcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SupportGroupController.cs",
+              "DocumentMoniker": "C:\\Users\\Eslam\\source\\repos\\NewProject\\NewProject\\Controllers\\SupportGroupController.cs",
+              "RelativeDocumentMoniker": "NewProject\\Controllers\\SupportGroupController.cs",
+              "ToolTip": "C:\\Users\\Eslam\\source\\repos\\NewProject\\NewProject\\Controllers\\SupportGroupController.cs",
+              "RelativeToolTip": "NewProject\\Controllers\\SupportGroupController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAswBIAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-06T09:33:36.236Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
