@@ -1,6 +1,7 @@
 using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using NewProject.Domain.models.Refrence;
 
 namespace NewProject.Domain.models.masterData
 {
@@ -23,11 +24,17 @@ namespace NewProject.Domain.models.masterData
         [Required]
         public int TaskTypeID { get; set; } = 0;
 
+        [ForeignKey("TaskTypeID")]
+        public TaskType? TaskType { get; set; }
+
         [Required]
         public int TaskStageID { get; set; }
 
         [Required]
         public int TaskStatusID { get; set; } = 1;
+
+        [ForeignKey("TaskStatusID")]
+        public NewProject.Domain.models.Refrence.TaskStatus? TaskStatus { get; set; }
 
         [Required]
         public int TaskPriorityID { get; set; } = 2;

@@ -22,6 +22,139 @@ namespace NewProject.Infrastructure.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("NewProject.Domain.models.Refrence.TaskStatus", b =>
+                {
+                    b.Property<int>("TaskStatusID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TaskStatusID"));
+
+                    b.Property<string>("Language")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TaskStatusName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("TenantID")
+                        .HasColumnType("int");
+
+                    b.HasKey("TaskStatusID");
+
+                    b.ToTable("TaskStatuses");
+
+                    b.HasData(
+                        new
+                        {
+                            TaskStatusID = 1,
+                            Language = "EN",
+                            TaskStatusName = "Pending"
+                        },
+                        new
+                        {
+                            TaskStatusID = 2,
+                            Language = "EN",
+                            TaskStatusName = "In Progress"
+                        },
+                        new
+                        {
+                            TaskStatusID = 3,
+                            Language = "EN",
+                            TaskStatusName = "Review"
+                        },
+                        new
+                        {
+                            TaskStatusID = 4,
+                            Language = "EN",
+                            TaskStatusName = "Completed"
+                        },
+                        new
+                        {
+                            TaskStatusID = 5,
+                            Language = "EN",
+                            TaskStatusName = "Cancelled"
+                        },
+                        new
+                        {
+                            TaskStatusID = 6,
+                            Language = "EN",
+                            TaskStatusName = "On Hold"
+                        },
+                        new
+                        {
+                            TaskStatusID = 7,
+                            Language = "EN",
+                            TaskStatusName = "Rejected"
+                        });
+                });
+
+            modelBuilder.Entity("NewProject.Domain.models.Refrence.TaskType", b =>
+                {
+                    b.Property<int>("TaskTypeID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TaskTypeID"));
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Language")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("TaskTypeName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("TenantID")
+                        .HasColumnType("int");
+
+                    b.HasKey("TaskTypeID");
+
+                    b.ToTable("TaskTypes");
+
+                    b.HasData(
+                        new
+                        {
+                            TaskTypeID = 1,
+                            Description = "Review a record or item",
+                            Language = "EN",
+                            TaskTypeName = "Review"
+                        },
+                        new
+                        {
+                            TaskTypeID = 2,
+                            Description = "Approve a request or change",
+                            Language = "EN",
+                            TaskTypeName = "Approval"
+                        },
+                        new
+                        {
+                            TaskTypeID = 3,
+                            Description = "Develop or review a mitigation plan",
+                            Language = "EN",
+                            TaskTypeName = "Mitigation Plan"
+                        },
+                        new
+                        {
+                            TaskTypeID = 4,
+                            Description = "Conduct an assessment",
+                            Language = "EN",
+                            TaskTypeName = "Assessment"
+                        },
+                        new
+                        {
+                            TaskTypeID = 5,
+                            Description = "Make updates to a module record",
+                            Language = "EN",
+                            TaskTypeName = "Update"
+                        });
+                });
+
             modelBuilder.Entity("NewProject.Domain.models.masterData.SupportGroup", b =>
                 {
                     b.Property<int>("GroupID")
@@ -202,6 +335,10 @@ namespace NewProject.Infrastructure.Migrations
 
                     b.HasIndex("GroupID");
 
+                    b.HasIndex("TaskStatusID");
+
+                    b.HasIndex("TaskTypeID");
+
                     b.ToTable("Tasks");
                 });
 
@@ -222,7 +359,23 @@ namespace NewProject.Infrastructure.Migrations
                         .WithMany()
                         .HasForeignKey("GroupID");
 
+                    b.HasOne("NewProject.Domain.models.Refrence.TaskStatus", "TaskStatus")
+                        .WithMany()
+                        .HasForeignKey("TaskStatusID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("NewProject.Domain.models.Refrence.TaskType", "TaskType")
+                        .WithMany()
+                        .HasForeignKey("TaskTypeID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("SupportGroup");
+
+                    b.Navigation("TaskStatus");
+
+                    b.Navigation("TaskType");
                 });
 
             modelBuilder.Entity("NewProject.Domain.models.masterData.SupportGroup", b =>

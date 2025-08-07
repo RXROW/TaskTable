@@ -5038,11 +5038,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Eslam\\source\\repos\\NewProject\\NewProject.Infrastructure\\NewProject.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\Eslam\\OneDrive\\Desktop\\NewProject\\NewProject.Infrastructure\\NewProject.Infrastructure.csproj",
       "projectName": "NewProject.Infrastructure",
-      "projectPath": "C:\\Users\\Eslam\\source\\repos\\NewProject\\NewProject.Infrastructure\\NewProject.Infrastructure.csproj",
+      "projectPath": "C:\\Users\\Eslam\\OneDrive\\Desktop\\NewProject\\NewProject.Infrastructure\\NewProject.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\Eslam\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Eslam\\source\\repos\\NewProject\\NewProject.Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\Eslam\\OneDrive\\Desktop\\NewProject\\NewProject.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -5063,8 +5063,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Eslam\\source\\repos\\NewProject\\NewProject.Domain\\NewProject.Domain.csproj": {
-              "projectPath": "C:\\Users\\Eslam\\source\\repos\\NewProject\\NewProject.Domain\\NewProject.Domain.csproj"
+            "C:\\Users\\Eslam\\OneDrive\\Desktop\\NewProject\\NewProject.Domain\\NewProject.Domain.csproj": {
+              "projectPath": "C:\\Users\\Eslam\\OneDrive\\Desktop\\NewProject\\NewProject.Domain\\NewProject.Domain.csproj"
             }
           }
         }

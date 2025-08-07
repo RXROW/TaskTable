@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Eslam\\source\\repos\\NewProject\\NewProject.Domain\\NewProject.Domain.csproj": {}
+    "C:\\Users\\Eslam\\OneDrive\\Desktop\\NewProject\\NewProject.Domain\\NewProject.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Eslam\\source\\repos\\NewProject\\NewProject.Domain\\NewProject.Domain.csproj": {
+    "C:\\Users\\Eslam\\OneDrive\\Desktop\\NewProject\\NewProject.Domain\\NewProject.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Eslam\\source\\repos\\NewProject\\NewProject.Domain\\NewProject.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Eslam\\OneDrive\\Desktop\\NewProject\\NewProject.Domain\\NewProject.Domain.csproj",
         "projectName": "NewProject.Domain",
-        "projectPath": "C:\\Users\\Eslam\\source\\repos\\NewProject\\NewProject.Domain\\NewProject.Domain.csproj",
+        "projectPath": "C:\\Users\\Eslam\\OneDrive\\Desktop\\NewProject\\NewProject.Domain\\NewProject.Domain.csproj",
         "packagesPath": "C:\\Users\\Eslam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Eslam\\source\\repos\\NewProject\\NewProject.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Eslam\\OneDrive\\Desktop\\NewProject\\NewProject.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
